@@ -1,0 +1,232 @@
+@import "../helper/Helper.scss";
+
+.custome-navbar {
+    ul {
+        li {
+            .nav-menu {
+                transition: 0.3s ease;
+                color: $white-color;
+                &:hover {
+                    border-top: 2px solid $white-color;
+                    border-bottom: 2px solid $white-color;
+                }
+            }
+        }
+    }
+}
+
+.our_services_class {
+    background: #18191b none repeat scroll 0 0;
+    padding: 80px 0;
+    .services-img {
+        transition: transform .2s;
+        /*&:hover {
+            transform: scale(1.5);
+            overflow: hidden;
+        }*/
+    }
+    p {
+        color: $white-color;
+    }
+    h3 {
+        color: $white-color;
+        span {
+            color: $yellow-color;
+        }
+    }
+    h1 {
+        color:$white-color;
+    }
+
+    .separator {
+        @include section_title_separator();
+        span {
+            &:before {
+                @include sepreter_after_befor(300px);
+                right: 100%;
+            }
+            &:after {
+                @include sepreter_after_befor(300px);
+                margin-left: 10px;
+            }
+            i {
+                @include circal_yellow()
+            }
+        }
+    }
+}
+
+.shope_the_look {
+    background: $light-black-color none repeat scroll 0 0;
+    padding: 50px 0;
+    h1 {
+        color: $white-color;
+    }
+    .separator {
+        @include section_title_separator();
+        span {
+            &:before {
+                @include sepreter_after_befor(300px);
+                right: 100%;
+            }
+            &:after {
+                @include sepreter_after_befor(300px);
+                margin-left: 10px;
+            }
+            i {
+                @include circal_yellow()
+            }
+        }
+    }
+
+    .gallary {
+        .portfolioFilter {
+            padding: 15px 0;
+            a {
+                margin-right: 6px;
+                color:$yellow-color;
+                border: 1px solid $white-color;
+                padding: 4px 15px;
+                border-radius: 50px;
+                font-weight: 600;
+                &:hover {
+                    background-color: $white-color;
+                    color: #000;
+                    font-weight: 600;
+                }
+                &.current {
+                    background: $white-color;
+                    border: 1px solid $border-color;
+                    color: $black-color;
+                }
+            }
+        }
+
+        .portfolioContainer {
+            margin-top: 40px;
+
+            .gallary_img {
+                padding-bottom: 30px;
+                position: relative;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                a {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    img {
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                    }
+                    .gallary_text {
+                        position: absolute;
+                        background: #333;
+                        background: rgba(75, 75, 75, 0.7);
+                        width: 100%;
+                        height: 100%;
+
+                        span {
+                            display: block;
+                            padding: 10px 0;
+                            margin: 40px 20px 20px 20px;
+                            text-transform: uppercase;
+                            font-weight: normal;
+                            color: rgba(255, 255, 255, 0.9);
+                            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.background-img {
+    background-image: url(../image/s2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parrelex_background {
+    background: url(../image/bg-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 115px 0;
+
+    .start_close_section {
+        border: solid 6px #fff;
+        max-width: 400px;
+        padding: 20px 20px 20px 20px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+
+        p {
+            font-size: 28px;
+            line-height: 1.2;
+
+            span {
+                text-transform: uppercase;
+                font-size: 16px;
+                color: yellow;
+            }
+        }
+    }
+}
+
+.footer_contact {
+    background: url(../image/bg-3.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 115px 0;
+    width: 100%;
+    //height: 100vh;
+    .contact_form {
+        background-color: #222222;
+        margin: 0 auto;
+        padding: 30px;
+        height: auto;
+        margin-bottom: 30px;
+
+        .custom_form {
+            .form-group {
+                label {
+                    color: #d4dbe2;
+                }s
+                input,
+                textarea {
+                    background-color: rgba(0, 0, 0, 0.2);
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                }
+            }
+            .custom-signin-btn {
+                width: 150px;
+                background-color: yellow;
+                color: #000;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/*.footer {
+    background-color: #222;
+    padding: 50px 0;
+}*/
+
+.footer_map {
+    .google_map {
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+//image gallary

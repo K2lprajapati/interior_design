@@ -1,0 +1,47 @@
+$white-color: #fff;
+$yellow-color:#ffff00;
+$light-black-color:#222;
+$border-color:#1e1e1e;
+$black-color:#000;
+
+
+@mixin sepreter_after_befor($width_1) {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    width: $width_1;
+    top: 6px;
+    margin-right: 10px;
+    margin-right: 50px;
+}
+
+@mixin circal_yellow() {
+    color: yellow;
+    font-size: 11px;
+}
+
+@mixin section_title_separator() {
+    line-height: 0.5;
+    //margin: 10px 0 50px 0;
+}
+
+//@mixin shadow($var) {
+//  @if($var == sm) {
+//    -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+//    -moz-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+//    box-shadow: 1px 7px 6px rgba(0, 0, 0, 0.5)
+//  }
+//  @else if($var == md) {
+//    -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+//    -moz-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+//    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+//  }
+//  @else if($var == lg) {
+//    -webkit-box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+//    -moz-box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+//    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+//  }
+//  @else {
+//    @error "Selected Wrong Box Shadow!!!";
+//  }
+//}
